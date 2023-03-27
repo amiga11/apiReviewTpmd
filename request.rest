@@ -1,0 +1,49 @@
+### Login
+POST http://localhost:8000/reviewtpmd/v1/login
+Content-Type: application/json
+
+{
+    "email": "aleklincah@gmail.com",
+    "password": "12345"
+}
+
+
+### Post Review
+POST http://localhost:8000/reviewtpmd/v1/review/submit
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtYSI6ImFsZWsiLCJlbWFpbCI6ImFsZWtsaW5jYWhAZ21haWwuY29tIiwiaWF0IjoxNjc5ODk5MzgyLCJleHAiOjE2Nzk5MDAyODJ9.DmTGapEMn62u74T-sMbc5aNO961WKUd8SC0dKlk68q8
+
+{
+    "doctor": {
+        "fasyankes_code": "36740100AAA",
+        "str_code": "212118181383",
+        "health_worker_name": "dr. Ujang",
+        "specialization": "Dokter Hewan"
+    },
+    "info": {
+        "checkin-time": "2021-01-01T00:00:00Z",
+        "review-time": "2021-01-01T00:00:00Z"
+    },
+    "reviews": [
+        {
+            "question": "Ketepatan Waktu",
+            "description": "Kesesuaian waktu pelayanan dengan jadwal praktik",
+            "answer": "Tepat Waktu"
+        },
+        {
+            "question": "Komunikasi",
+            "description": "Kualitas informasi yang disampaikan pada Anda",
+            "answer": "Mudah Dipahami"
+        },
+        {
+            "question": "Kebersihan",
+            "description": "Kebersihan tempat dan peralatan",
+            "answer": "Bersih"
+        },
+        {
+            "question": "Pelayanan",
+            "description": "Keseluruhan pelayanan dokter",
+            "answer": "Bersih"
+        }
+    ]
+}
