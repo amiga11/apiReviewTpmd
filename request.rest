@@ -3,9 +3,17 @@ POST http://localhost:8000/reviewtpmd/v1/login
 Content-Type: application/json
 
 {
-    "email": "aleklincah@gmail.com",
-    "password": "12345"
+    "email": "dtosatusehat@kemkes.go.id",
+    "password": "DTOs4TS3t!!!"
 }
+
+### GET DATA Nakes
+GET http://localhost:8000/reviewtpmd/v1/nakes/?kodefaskes=31740100001
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtYSI6ImFsZWsiLCJlbWFpbCI6ImR0b3NhdHVzZWhhdEBrZW1rZXMuZ28uaWQiLCJpYXQiOjE2ODExMTY1MzMsImV4cCI6MTY4MTExNzQzM30.yOyphuT7ykTi6k4SCOeH3Wky6Y8_un-UOhsjf71CKDE
+
+### GET DATA Faskes
+GET http://localhost:8000/reviewtpmd/v1/fasyankes/?kodefaskes=31740100001
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtYSI6ImFsZWsiLCJlbWFpbCI6ImR0b3NhdHVzZWhhdEBrZW1rZXMuZ28uaWQiLCJpYXQiOjE2ODExMTY1MzMsImV4cCI6MTY4MTExNzQzM30.yOyphuT7ykTi6k4SCOeH3Wky6Y8_un-UOhsjf71CKDE
 
 
 ### Post Review
