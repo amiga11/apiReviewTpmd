@@ -27,10 +27,10 @@ export const databaseReview = new Sequelize(
 
 export const databaseRegfaskes = new Sequelize(
   process.env.DB_DATABASE_REGFASKES,
-  process.env.DB_USERNAME_REVIEW,
-  process.env.DB_PASSWORD_REVIEW,
+  process.env.DB_USERNAME_REGFASKES,
+  process.env.DB_PASSWORD_REGFASKES,
   {
-    host: process.env.DB_HOST_REVIEW,
+    host: process.env.DB_HOST_REGFASKES,
     dialect: "mysql",
     define: {
       freezeTableName: true,
